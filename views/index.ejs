@@ -27,19 +27,19 @@
         <section class="todo">
             <form action="/" method="post" class="todo-header">
                 <!-- <label for="todos"></label> -->
-                <input type="text" name="title" placeholder="your title">
+                <input type="text" name="title" placeholder="Topic">
                 <!-- larger box to type -->
-                <textarea name="content" id="" cols="30" rows="10"> Content </textarea>
+                <textarea name="content" id="" cols="30" rows="10"> </textarea>
                 <button class="" name="" type="submit"> <span class="fas fa-plus"></span> Add Text </button>
             </form>
 
             <ul class="toDo-list">
                 <% for(let i=0; i < ejsTasks.length; i++){ %>
                     <li class="toDo-list-item">
-                        <div class="toDo-list-item-title">
+                        <div class="toDo-list-item-title" id="title">
                             <%= ejsTasks[i].title %>
                         </div>
-                        <div class="toDo-list-item-content">
+                        <div class="toDo-list-item-content" id="content">
                             <%= ejsTasks[i].content %>
                         </div>                       
                     </li>
