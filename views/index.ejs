@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>To Do List</title>
+</head>
+
+<body>
+    <section class="todo-container">
+        <h2>List To Complete</h2>
+
+        <section class="todo">
+            <form action="/" method="post" class="todo-header">
+                <!-- <label for="todos"></label> -->
+                <input type="text" name="title" placeholder="your title">
+                <!-- larger box to type -->
+                <textarea name="content" id="" cols="30" rows="10"> Content </textarea>
+                <button class="" name="" type="submit"> <span class="fas fa-plus"></span> Add Text </button>
+            </form>
+
+            <ul class="toDo-list">
+                <% for(let i=0; i < ejsTasks.length; i++){ %>
+                    <li class="toDo-list-item">
+                        <div class="toDo-list-item-title">
+                            <%= ejsTasks[i].title %>
+                        </div>
+                        <div class="toDo-list-item-content">
+                            <%= ejsTasks[i].content %>
+                        </div>                       
+                    </li>
+                    <a href="/edit/<%=ejsTasks[i]._id%>" class="edit">
+                        <span class="far fa-edit"></span>
+                    </a>
+                    <a href="/remove/<%=ejsTasks[i]._id%>" class="remove">
+                        <span class="fas fa-times"></span>
+                    </a>
+                    <% } %>
+
+            </ul>
+        </section>
+    </section>
+
+</body>
+
+</html>

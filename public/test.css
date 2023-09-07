@@ -1,0 +1,171 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a light background color for the body */
+body {
+    background-color: #eaeaf6ce;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the todo-container */
+.todo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(18, 197, 176, 0.8);
+    border-radius: 5px;
+}
+
+.inside-header {
+    box-shadow: 0px 2px 5px rgba(76, 216, 146, 0.8);
+}
+
+/* Style the h2 header */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the todo-header form */
+.todo-header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the input field */
+input[type="text"],
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the Add Text button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the toDo-list */
+.toDo-list {
+    list-style: none;
+    margin-top: 20px;
+    
+}
+
+/* Style each toDo-list-item */
+.toDo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    /* White background for list items */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(199, 35, 122, 0.8); /* Add a subtle shadow */
+}
+.toDo-list-item-title, .toDo-list-item-content {
+    width: 50%;
+}
+/* Style the task-info div */
+.task-info {
+    display: flex;
+    flex:1;
+    justify-content: space-evenly;
+    /* margin-right: 10px; */
+}
+
+/* Style the task-icons div */
+.task-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Style the edit and remove links */
+.edit,
+.remove {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* On hover, change the color of the edit and remove links */
+.edit:hover,
+.remove:hover {
+    color: #ff0000;
+}
+
+/* Media Query for tablets and small screens */
+@media screen and (max-width: 768px) {
+
+    /* Adjust padding and font sizes for smaller screens */
+    .todo-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .toDo-list-item {
+        padding: 10px;
+    }
+}
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 480px) {
+
+    /* Further adjust padding and font sizes for mobile devices */
+    .todo-container {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button[type="submit"] {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .toDo-list-item {
+        padding: 8px;
+    }
+}
