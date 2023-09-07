@@ -5,7 +5,7 @@
 }
 
 body {
-    background: rgb(91, 35, 121);
+    background: rgb(140, 30, 199);
     font-family: 'Open Sans',sans-serif;
 }
 
@@ -17,7 +17,7 @@ body {
     padding: 20px;
     width: 600px;
     transform: translate(-50%, -50%);
-    background: rgba(23, 185, 218, 0.7);
+    background: rgba(93, 189, 240, 0.7);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
