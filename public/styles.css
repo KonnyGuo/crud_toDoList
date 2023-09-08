@@ -5,7 +5,7 @@
 }
 
 body {
-    background: rgb(140, 30, 199);
+    background: rgb(89, 25, 123);
     font-family: 'Open Sans',sans-serif;
 }
 
@@ -81,7 +81,7 @@ ul {
 }
 
 #content {
-    color: rgb(231, 206, 189); 
+    color: rgb(32, 27, 27); 
     font-weight: 500;
 }
 .todo-list-item-content {
